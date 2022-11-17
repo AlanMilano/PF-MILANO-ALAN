@@ -1,0 +1,79 @@
+.menu {
+    width: 100%;
+    text-align: center;
+    border: $color-principal-uno solid 3px;
+    margin-top: 75px;
+  
+    ul {
+      list-style: none;
+  
+      li {
+        display: inline-block;
+        padding: 20px;
+  
+        a {
+          font-size: $tam-fuente;
+          color: $color-principal-dos;
+          font-size: $fuente-principal;
+          text-decoration: none;
+
+          &:hover {
+            background-color: $color-principal-uno;
+          }
+        }
+      }
+    }
+  }
+  .row .col-sm-6 {
+    margin-bottom: 100px;
+  }
+  
+  .fotoIndexAbajo {
+    border: #0B3675 solid 3px;
+  }
+//EXTEND REALIZADO
+  .fotoIndexArriba {
+    @extend .fotoIndexAbajo;
+    margin-top: 75px;
+  }
+
+  .comoTrabajamos {
+    color: $color-principal-dos;
+    margin-top: 25px;
+  }
+  //MIXIN REALIZADO
+  @mixin h2Subt {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+  }
+  
+  .parrafo {
+    font-family: $fuente-principal;
+    color: $color-principal-dos;
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-top: 75px;
+    font-size: large;
+  }
+
+  .textProducto {
+    color: $color-principal-dos;
+  }
+  
+  .precio {
+    color: $color-principal-uno;
+  }
+
+  .quienesSomos {
+    @include h2Subt;
+    color: $color-principal-dos;
+  }
+  
+  .lorem {
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-top: 75px;
+    font-family: $fuente-principal;
+    color: $color-principal-dos;
+    font-size: large;
+  }

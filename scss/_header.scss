@@ -1,0 +1,65 @@
+//HEADER
+
+.widthCien {
+  width: 100%;
+}
+.logoPrincipal {
+    height: 150px;
+    font-family: $fuente-principal;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+    img {
+      text-align: center;
+      height: 100px;
+    }
+  }
+
+.navLogo {
+    color: $color-principal-dos;
+    font-family: $fuente-principal;
+  }
+  
+  .carrito {
+    text-align: right;
+    margin-right: 15px;
+    height: 30px;
+  }
+  
+  .buscarYLoggin {
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+  }
+  
+  .inicioSesion {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+  }
+
+
+
+.buscarYLoggin {
+    grid-area: busqueda;
+  }
+  
+  .carrito {
+    grid-area: carrito;
+  }
+  
+  .inicioSesion {
+    grid-area: loggin;
+  }
+
+  .contenedorGrid {
+    display: grid;
+    grid-template-areas: busqueda busqueda busqueda loggin loggin carrito;
+  }
+
+.fotoIndexAbajo {
+    border: $color-principal-uno solid 3px;
+  }
